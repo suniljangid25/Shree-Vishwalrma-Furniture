@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="Eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+     <link rel="stylesheet" href="Styles/order.css">
+</head>
+<body>
+    <section id="order">
+        <h2>⚡To Order with SVF</h2>
+        <p>Please fill in your details below:</p>
+        <form id="orderForm">
+            <label for="name">Name :</label>
+            <input type="text" id="name" required>
+
+            <label for="phone">Mobile No:</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" required>
+
+            <label for="quantity">Number's of Product</label>
+            <input type="number" id="quantity" min="1" max="5" required>
+
+            <label for="message" placeholder="Write you query here!">Message (Optional):</label>
+            <textarea id="message" placeholder="what you want" rows="3"></textarea>
+
+            <label>Choose Maximum Design of 3</label>
+            <div class="design-gallery" id="designGallery">
+                <img src="images/1_36e139dd-3a33-4422-afeb-49a1b22c2090.webp" data-url="https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22a1.jpg%22%2C%22type%22%3A%22image%2Fjpeg%22%2C%22signedurl_expire%22%3A%222028-02-26T10%3A05%3A37.651Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2F397c762e6229485a%2Fa1.jpg%3FExpires%3D1835172338%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3Dy5lKwz1JJE0LQJqBsAVEOVdhTzwINpDo8MF4RcptDSQXK~ESf077Ow98Sj12CBV6xgjC4d04blcYa1C94KfQUTsbXHpM82X5lc9YfS9apUu2dlGgJgjER~Hcty1QL5STbnzObYSwM6ZCVWsI7UuG1hNsl2G0EOu87NhZwXG98HDsrJ4WuUU~Kf~OI2JywXG66LzEiOMuIFeDmkSCYZAEugRA29NUyx8iZS72EO2uc2BXnI4G9Q56Lbc2d2doOUhK82k7INC46nonGPyJny10K9bPdTClEn2ska8gJQ41AHIPWuGNpasgLthy7x0uFskiLQ1pfA3MKcT64IqtaF1yxQ__%22%7D" onclick="selectDesign(this)">
+                <img src="images/0b1999ac124b9aa40a1a0858dc831bcc.jpg" data-url="https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22b1.jpg%22%2C%22type%22%3A%22image%2Fjpeg%22%2C%22signedurl_expire%22%3A%222028-02-26T10%3A05%3A37.653Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2Fac1f0ce48e644e1e%2Fb1.jpg%3FExpires%3D1835172338%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DvWdH~l1IW6Vc58asluJFB1viSpYW5DBn0hOujPwVyGJbhHfId46DyglvewQpBMf7XhIPeuhdobRhe9gWGQLALgnNT8VKynt4BRvvRWyB4Lu3eYtISpoXRe4HhqNCvafw2zd6YsnHG4U53AVBqykzGGOiLj8fX~BzkHJ5n5ay00m7CV4lf9FqGHv9nflCj1M6b70SUhRVekrBAA~TC2p~7gPQf4JW5j0ovLqgkZMjeyoGOucCfDgNq7Xfcsi8F5c5C4TGY6TReocUXrpsuOStkc4Z~YScNpT8TerOOs-AEyjyscshTQ98mDHf8xSy5C4sDLqDpq0n-0UtVJ6sbmsDpA__%22%7D" onclick="selectDesign(this)">
+                <img src="images/2 Swing.webp" data-url="https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22c1.jpg%22%2C%22type%22%3A%22image%2Fjpeg%22%2C%22signedurl_expire%22%3A%222028-02-26T10%3A05%3A37.657Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2Fa2182b5adcd54af0%2Fc1.jpg%3FExpires%3D1835172338%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3D25ITAsOsxxUQSt7nBZyRBPBDxdnrHIQjHq3KkWiywdTSKnKBYioRHM7yZ7t8SKVDyIXaHWZ~qLlKfmOQMZ47yNVsNdCPjVIFOdIu498XjFW53pNOXWKF6N3H2KpnleQAWBDXllzJ4PxbqIveQAwurwIFHTV-fneqEcUPyQAFW-4fpRsaQoofpTUSa6OsxBBd3a2eUCgWFgDczbpTUi6BdrQfjz2WrZz-NwmjtvOU7rB0EBeFhbGafRgoOPtchE1MY9MQQeOvEjJp-zJApkRTxvVxQp9LkjPkWDYkTkDhtkpyGFTIApigxgr~N15RI38nOYipPDPg2bS4RjwepCc8Zg__%22%7D" onclick="selectDesign(this)">
+                <img src="images/TV Table27.webp" data-url="/mnt/data/disign1.jpeg" onclick="selectDesign(this)">
+            </div>
+
+            <div class="more-designs">
+                <a href="images.html">Show More Designs</a>
+            </div>
+
+            <button type="submit">Send Order</button>
+        </form>
+    </section>
+    <script src="Scripts/order.js"></script>
+</body>
+</html>
